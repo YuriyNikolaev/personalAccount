@@ -175,6 +175,7 @@ section {
   border-radius: 60px;
   margin-bottom: 16px;
   background: #fff;
+  border: 3px solid #fff;
 }
 .purchase-card:hover {
   border: 3px solid red;
@@ -200,11 +201,33 @@ section {
   /* border-radius: 50px; */
   /* background: #fff; */
 }
+
 .card-data p {
   margin: 0;
   font-size: 14px;
   line-height: 15px;
   padding: 30px;
+}
+.card-data-hidden {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 38px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  background: #fff;
+}
+.card-data-hidden p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 15px;
+  padding: 30px;
+}
+.card-data-hidden:hover {
+  border: 3px solid red;
+  cursor: pointer;
+  /* margin: 3px; */
 }
 .card-status {
   font-size: 11px;
@@ -232,6 +255,11 @@ section {
   background: #cacaca;
   box-shadow: 0px -10px 13px #c2c2c2, 0px 3px 8px rgba(210, 216, 225, 0.7);
 }
+.card-details-hidden {
+  /* opacity: 0; */
+  display: none;
+}
+
 /*  */
 .wrap-prize p {
   margin: 0;
