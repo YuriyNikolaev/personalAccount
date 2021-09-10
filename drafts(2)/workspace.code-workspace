@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../../WebLessons"
+	},
+	{
+		"path": "../../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "WebProjects"
+  }
+}
