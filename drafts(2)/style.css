@@ -296,12 +296,17 @@ section {
   display: inline-block;
   /* list-style: none; */
   font-size: 16px;
-  margin-left: 15px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
 }
 .main-footer ul li:hover {
-  background-color: green;
-  /* padding: 5px;
-  border-radius: 100%; */
+  background-color: rgb(20, 226, 20);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
 }
 .main-footer ul li a {
   text-decoration: none;
