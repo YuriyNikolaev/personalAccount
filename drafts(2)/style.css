@@ -341,5 +341,16 @@ footer {
 }
 .footer-social {
   max-width: 44px;
-  max-height: 44px;
+}
+/* Адаптив */
+@media (max-width: 321px) {
+  .footer-rules {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-wrap .footer-social {
+    flex-direction: row;
+    max-height: 44px;
+    justify-content: space-between;
+  }
 }
