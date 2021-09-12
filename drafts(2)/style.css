@@ -286,9 +286,10 @@ section {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  color: #585a5c;
+  font-weight: bold;
 }
 .main-footer button:active {
-  color: #5a6067;
   background: #d4d2d2;
   box-shadow: 0px -10px 13px #ffffff, 0px 10px 13px #d2d8e1;
 }
@@ -296,9 +297,10 @@ section {
   display: inline-block;
   /* list-style: none; */
   font-size: 16px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   width: 20px;
   height: 20px;
+  text-align: center;
 }
 .main-footer ul li:hover {
   background-color: rgb(20, 226, 20);
@@ -315,7 +317,7 @@ section {
 /* footer */
 footer {
   /* width: 100%; */
-  height: 330px;
+  height: 100%;
   background: #5c6167;
 }
 .footer-wrap {
@@ -336,21 +338,53 @@ footer {
   text-decoration: none;
 }
 .footer-social {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 10px;
 }
-.footer-social {
-  max-width: 44px;
+.footer-social a {
+  display: block;
+  max-height: 44px;
 }
 /* Адаптив */
 @media (max-width: 321px) {
+  main {
+    margin-bottom: 67px;
+  }
+  /* нижняя часть секции main */
+  .main-footer ul {
+    display: none;
+  }
+  /* карточки для розыгрыша  */
+  .small_hidden {
+    display: none;
+  }
+  .purchase-card-hidden {
+    width: 292px;
+    /* height: 76px; */
+  }
+  .card-product_quantity,
+  .card-numb_applictations,
+  .card-draw_date {
+    display: none;
+  }
+  /* Футер */
+  /* Подпись в футере */
   .footer-rules {
     flex-direction: column;
     align-items: center;
   }
-  .footer-wrap .footer-social {
-    flex-direction: row;
-    max-height: 44px;
-    justify-content: space-between;
+  .footer-rules p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 30px;
+  }
+  /* соц сети в футере */
+  .footer-social {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .footer-social a {
+    display: inline-block;
   }
 }
