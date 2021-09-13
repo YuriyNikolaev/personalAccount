@@ -195,11 +195,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin-top: 28px; */
-  /* margin-bottom: 38px; */
-  /* border: 1px solid black; */
-  /* border-radius: 50px; */
-  /* background: #fff; */
 }
 
 .card-data p {
@@ -232,11 +227,22 @@ section {
 .card-status {
   font-size: 11px;
 }
+
+/* оформление полной карточки */
 .card-details {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
+}
+.card-details .wrap-card_img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card-details .wrap-card_img img {
+  margin-right: 50px;
 }
 .card-details button {
   height: 58px;
@@ -259,8 +265,6 @@ section {
   /* opacity: 0; */
   display: none;
 }
-
-/*  */
 .wrap-prize p {
   margin: 0;
   font-size: 11px;
@@ -270,9 +274,8 @@ section {
   text-transform: uppercase;
   color: #e2231a;
 }
-/* .hide {
-  display: none;
-} */
+
+/* футер основной части */
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -351,13 +354,74 @@ footer {
   main {
     margin-bottom: 67px;
   }
+  main .main_bolder {
+    max-width: 320px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #5a6067;
+  }
+  main p,
+  h1,
+  .demands {
+    margin-left: 20px;
+  }
   /* нижняя часть секции main */
   .main-footer ul {
+    display: none;
+  }
+  /* секция каталога, шапка */
+  .purchases-head {
     display: none;
   }
   /* карточки для розыгрыша  */
   .small_hidden {
     display: none;
+  }
+  .purchase-card_small {
+    max-width: 310px;
+    border-radius: 60px;
+    margin-bottom: 16px;
+    background: #fff;
+    border: 3px solid #fff;
+  }
+  .purchase-card_small p {
+    font-size: 14px;
+  }
+  .card-details_small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .card-details_small .wrap-card_img {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* margin-bottom: 20px; */
+  }
+  .card-details_small .wrap-card_img img {
+    margin-right: 35px;
+  }
+  .card-details_small button {
+    height: 58px;
+    padding: 0 24px;
+    text-transform: uppercase;
+    background: #ffffff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px -10px 13px #fafafa, 0px 3px 8px rgba(210, 216, 225, 0.7);
+    vertical-align: middle;
+    color: #e2231a;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .purchase-card {
+    display: none;
+  }
+  .card-data-hidden {
+    height: 75px;
   }
   .purchase-card-hidden {
     width: 292px;
