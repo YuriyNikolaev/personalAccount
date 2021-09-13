@@ -365,6 +365,16 @@ footer {
   .demands {
     margin-left: 20px;
   }
+  .demands {
+    display: flex;
+    flex-direction: column;
+  }
+  .demands button {
+    width: 200px;
+    font-size: 14px;
+    padding: 0px;
+    border: 1px solid black;
+  }
   /* нижняя часть секции main */
   .main-footer ul {
     display: none;
