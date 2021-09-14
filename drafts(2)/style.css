@@ -349,16 +349,66 @@ footer {
   display: block;
   max-height: 44px;
 }
-/* Адаптив */
+/* ======= */
+
+/* Маленькая карточка товаров */
+.purchase-card_small {
+  padding: 15px;
+  width: 290px;
+  background-color: #fff;
+}
+.table-data {
+  border: 1px solid black;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-data p {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.card-details_small {
+  /* display: flex; */
+}
+.card-details_img {
+  display: flex;
+  justify-content: space-around;
+}
+.card-sml_btns {
+  display: flex;
+  flex-direction: column;
+}
+.card-sml_btns button {
+  width: 275px;
+}
+/* =========== */
+/* АДАПТИВ 320PX */
 @media (max-width: 321px) {
+  header {
+    max-width: 320px;
+  }
+  .exit_btn,
+  .menu-btn {
+    display: none;
+  }
   main {
-    margin-bottom: 67px;
+    width: 320px;
+    /* margin: 0 10px 67px 10px; */
   }
   main .main_bolder {
     max-width: 320px;
     font-size: 15px;
     font-weight: 800;
     color: #5a6067;
+  }
+  main p {
+    font-size: 12px;
+    width: 310px;
+  }
+  main h1 {
+    font-size: 24px;
   }
   main p,
   h1,
@@ -397,6 +447,9 @@ footer {
   .purchase-card_small p {
     font-size: 14px;
   }
+  /* .table-data {
+    max-width: 320px;
+  } */
   .card-details_small {
     display: flex;
     flex-direction: column;
