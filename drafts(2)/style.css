@@ -536,9 +536,6 @@ footer {
     color: #fff;
     margin: 20px 20px 20px 20px;
   }
-  .card-details_small {
-    /* display: flex; */
-  }
   .card-details_img {
     display: flex;
     /* justify-content: space-around; */
