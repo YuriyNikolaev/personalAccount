@@ -570,3 +570,23 @@ footer {
   }
 }
 /* !!! PAGE WINNER !!! */
+.winner_card {
+  display: flex;
+  width: 1100px;
+  height: 370px;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+}
+.winner_data {
+  display: flex;
+  flex-direction: column;
+}
+.winner_data h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #e2231a;
+}
+.winner_data p {
+  margin: 0;
+}
