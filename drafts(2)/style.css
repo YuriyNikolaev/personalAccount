@@ -369,8 +369,8 @@ footer {
     display: none;
   }
   main {
-    width: 320px;
-    /* margin: 0 10px 67px 10px; */
+    width: 300px;
+    margin: 100px 10px 67px;
   }
   main .main_bolder {
     max-width: 320px;
@@ -388,7 +388,8 @@ footer {
   main p,
   h1,
   .demands {
-    margin-left: 20px;
+    margin: 0px 0px 15px;
+    width: 300px;
   }
   .demands {
     display: flex;
@@ -400,6 +401,7 @@ footer {
     padding: 0px;
     border: 1px solid black;
   }
+
   /* нижняя часть секции main */
   .main-footer ul {
     display: none;
@@ -471,6 +473,9 @@ footer {
     display: none;
   }
   /* Футер */
+  footer {
+    width: 320px;
+  }
   /* Подпись в футере */
   .footer-rules {
     flex-direction: column;
