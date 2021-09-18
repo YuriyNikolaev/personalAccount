@@ -567,10 +567,12 @@ footer {
   }
 }
 /* !!! PAGE WINNER !!! */
+/* карточка победителя */
 .winner_card {
   display: flex;
   width: 1100px;
   height: 370px;
+  margin-bottom: 50px;
   border-radius: 100px;
   background-color: #fff;
   justify-content: space-around;
@@ -584,7 +586,56 @@ footer {
   font-size: 32px;
   text-transform: uppercase;
   color: #e2231a;
+  margin-bottom: 18px;
 }
 .winner_data p {
-  margin: 0;
+  margin: 0 0 20px;
+}
+.winner_name {
+  font-size: 24px;
+  font-weight: 800;
+}
+.winner_prize {
+  font-size: 18px;
+}
+.win_inf p {
+  margin: 0 0 58px;
+  font-size: 14px;
+  /* color: #5a6067; */
+}
+.prize_image {
+  text-align: center;
+}
+@media (max-width: 321px) {
+  .up_section {
+    text-align: center;
+  }
+  /* карточка победителя */
+  .winner_card {
+    flex-direction: column;
+    width: 292px;
+    min-height: 524px;
+    border-radius: 100px 100px 100px 0;
+    align-items: center;
+  }
+  .wiiner_pic img {
+    width: 152px;
+  }
+  .winner_data {
+    align-items: center;
+  }
+  .winner_data h3 {
+    font-size: 18px;
+  }
+  .winner_name {
+    font-size: 12px;
+  }
+  .winner_prize {
+    font-size: 8px;
+  }
+  .win_inf {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 220px;
+  }
 }
