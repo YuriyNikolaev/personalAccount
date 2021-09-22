@@ -147,10 +147,11 @@ main .main_bolder {
   color: #5a6067;
 }
 /* секция каталога */
-section {
+.section {
   width: 100%;
   /* margin-left: 310px; */
   /* margin-right: 310px; */
+  background-image: url(img/Vector.svg);
 }
 /* шапка заявок */
 .purchases-head {
@@ -159,7 +160,8 @@ section {
   align-items: center;
   justify-content: space-around;
   margin-bottom: 16px;
-  background-image: url(img/Vector.svg);
+  margin-right: 140px;
+  /* background-image: url(img/Vector.svg); */
 }
 .purchases-head p {
   margin: 0;
@@ -173,7 +175,7 @@ section {
 
 /* Маленькая карточка товаров */
 .purchase-card_small {
-  display: none;
+  /* display: none; */
 }
 
 /* карточки товаров */
@@ -329,6 +331,7 @@ footer {
   /* width: 100%; */
   height: 100%;
   background: #5c6167;
+  min-height: 294px;
 }
 .footer-wrap {
   margin: 0 auto;
@@ -348,9 +351,9 @@ footer {
   text-decoration: none;
 }
 .footer-social {
-  /* display: flex;
-  flex-direction: column; */
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+  margin-top: 55px;
 }
 .footer-social a {
   display: block;
@@ -489,7 +492,7 @@ footer {
   }
   /* соц сети в футере */
   .footer-social {
-    text-align: center;
+    justify-content: center;
     margin-bottom: 50px;
   }
   .footer-social a {
@@ -606,6 +609,10 @@ footer {
 .prize_image {
   text-align: center;
 }
+/* шапка таблицы */
+.section .purchases-head {
+  /* border: 1px solid black; */
+}
 /* Форма поиска */
 form {
   display: flex;
@@ -631,11 +638,39 @@ form .search_btn {
   background: #f5f5f5;
   box-shadow: 0px -10px 13px #ffffff, 0px 10px 13px #d2d8e1;
 }
-/* form .search_btn img {
-  border: 1px solid black;
-  border-radius: 50%;
-} */
-/* Адаптив карточки победителя */
+/* Карточки победителей */
+.purchase-card_small {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  background: #fff;
+}
+.winner-table {
+  display: flex;
+  justify-content: space-around;
+}
+.winner-data {
+  /* border: 1px solid black; */
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.winner-title {
+  display: none;
+}
+.winner-data p {
+  margin: 20px 20px 20px 13px;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+}
+.prize_img {
+  display: flex;
+  height: 76%;
+  align-self: center;
+}
+
+/* Адаптив !!! PAGE WINNER !!!  */
 @media (max-width: 321px) {
   /* настройка секции */
   .up_section {
@@ -692,7 +727,25 @@ form .search_btn {
     width: 18px;
     vertical-align: middle;
   }
-
+  /* Шапка таблицы */
+  .section {
+    display: none;
+  }
+  /* Карточки победителей */
+  .winner-table {
+    flex-direction: column;
+  }
+  .winner-title {
+    display: block;
+  }
+  .winner-data {
+    align-items: center;
+  }
+  .winner-data p {
+    /* margin: 20px 20px 20px 13px; */
+    max-width: 250px;
+    text-align: center;
+  }
   /* Адаптив main footer */
   .main-footer {
     justify-content: center;
