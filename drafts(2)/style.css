@@ -175,12 +175,40 @@ main .main_bolder {
 
 /* Маленькая карточка товаров */
 .purchase-card_small {
-  /* display: flex; */
+  border: 3px solid #fff;
+}
+.purchase-card_small:hover {
+  border: 3px solid red;
 }
 .table {
   display: flex;
   justify-content: space-around;
 }
+.table-data {
+  border: 1px solid black;
+}
+.table-data p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 15px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.table-data .win-tab {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  border-radius: 30px 30px 30px 0;
+  height: 40px;
+  width: 70px;
+}
+.table-data .win-tab p {
+  color: #fff;
+  margin: 20px 20px 20px 20px;
+}
+
+/* ============= */
 .card-details_small {
   display: flex;
   justify-content: space-around;
@@ -188,7 +216,27 @@ main .main_bolder {
 }
 .card-details_img {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
 }
+.card-details_img img {
+  margin-right: 50px;
+}
+.card-sml_btns button {
+  height: 58px;
+  padding: 0 24px;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px -10px 13px #fafafa, 0px 3px 8px rgba(210, 216, 225, 0.7);
+  vertical-align: middle;
+  color: #e2231a;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* ================ */
 /* карточки товаров */
 .purchase-card {
   min-height: 186px;
