@@ -679,9 +679,9 @@ footer {
   text-align: center;
 }
 /* шапка таблицы */
-.section .purchases-head {
-  /* border: 1px solid black; */
-}
+/* .section .purchases-head {
+  border: 1px solid black;
+} */
 /* Форма поиска */
 form {
   display: flex;
@@ -804,7 +804,7 @@ form .search_btn {
   /* карточка 1 маленькая */
   .purchase-card_small {
     padding: 15px 15px 25px 15px;
-    margon-top: 19px;
+    margin-top: 19px;
     margin-bottom: 19px;
   }
   .winner-table {
