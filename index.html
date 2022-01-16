@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drafts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- https://www.figma.com/file/Z4TVmVcfeGnHyVj24m15zZ/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-(Copy)?node-id=1%3A134 -->
+    <header>
+      <!-- кнопка выход -->
+      <button class="exit_btn">выйти</button>
+
+      <button class="menu-group">
+        <img src="img/Group 2.png" alt="" class="menu-image" />
+        <p class="menu-btn">menu</p>
+      </button>
+    </header>
+    <!--  -->
+    <main>
+      <div class="up_section">
+        <h1>личный кабинет</h1>
+        <p>Количество приобретенной продукции: <span>25</span></p>
+        <p>Количество заявок на розыгрыш Главного приза: <span>2</span></p>
+        <p>
+          Осталось продукции для формирования заявки на Главный приз:
+          <span>5</span>
+        </p>
+        <div class="demands">
+          <button class="demands-btn">покупки и заявки</button>
+          <button class="data-btn">персональные данные</button>
+        </div>
+        <p class="main_bolder">
+          Напоминаем, что обновление информации о Ваших покупках <br />
+          производится один раз в неделю каждый рабочий понедельник.
+        </p>
+      </div>
+
+      <!-- секция каталога -->
+      <div class="section">
+        <div class="purchases-head">
+          <p>дата покупки</p>
+          <p>
+            количество<br />
+            акционного товара<br />
+            в покупке
+          </p>
+          <p>
+            количество заявок<br />
+            на еженедельный<br />
+            розыгрыш
+          </p>
+          <p>дата розыгрыша</p>
+          <p>статус</p>
+        </div>
+        <!-- ===================== -->
+        <!-- карточка 1 маленькая -->
+        <div class="purchase-card_small">
+          <!-- верхняя часть карточки -->
+          <div class="table">
+            <!-- Дата покупки -->
+            <div class="table-data">
+              <p>дата покупки</p>
+              <p>21.04.2021</p>
+            </div>
+            <!-- Кол-во ТМЦ по акции-->
+            <div class="table-data">
+              <p>
+                количество<br />
+                акционного товара<br />
+                в покупке
+              </p>
+              <p>34</p>
+            </div>
+            <!-- Кол-во заявок -->
+            <div class="table-data">
+              <p>
+                количество заявок<br />
+                на еженедельный<br />
+                розыгрыш
+              </p>
+              <p>1456</p>
+            </div>
+            <!-- Статус -->
+            <div class="table-data">
+              <p>статус</p>
+              <div class="win-tab">
+                <p>win!</p>
+              </div>
+            </div>
+          </div>
+          <!-- нижняя часть карточки -->
+          <div class="card-details_small">
+            <div class="card-details_img">
+              <img src="img/Layer-81 1.png" alt="#" />
+              <div class="wrap-prize">
+                <h4>главный приз</h4>
+                <p>
+                  умная система очистки<br />
+                  воздуха
+                </p>
+              </div>
+            </div>
+            <div class="card-sml_btns">
+              <button>заполнить адрес доставки</button>
+              <button>заполнить персональные данные</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- карточка 1 -->
+        <div class="purchase-card">
+          <div class="card-data">
+            <p>21.04.2021</p>
+            <p>34</p>
+            <p>1456</p>
+            <p>21.04.2021</p>
+            <div class="win">
+              <p>win!</p>
+            </div>
+          </div>
+
+          <div class="card-details active">
+            <div class="wrap-card_img">
+              <img src="img/Layer-81 1.png" alt="#" />
+              <div class="wrap-prize">
+                <h4>главный приз</h4>
+                <p>
+                  умная система очистки<br />
+                  воздуха
+                </p>
+              </div>
+            </div>
+
+            <button>заполнить адрес доставки</button>
+            <button>заполнить персональные данные</button>
+          </div>
+        </div>
+        <!-- карточка 2 -->
+        <!-- КОНЕЦ карточка 2 -->
+        <!-- ==== -->
+        <!-- карточка 3 -->
+        <div class="purchase-card-hidden">
+          <div class="card-data-hidden">
+            <p class="card-purchase_date">21.04.2021</p>
+            <p class="card-product_quantity">34</p>
+            <p class="card-numb_applictations">1456</p>
+            <p class="card-draw_date">21.04.2021</p>
+            <p>
+              нет ни одной<br />
+              выигравшей заявки
+            </p>
+          </div>
+          <div class="card-details-hidden">
+            <img src="img/Layer-81 1.png" alt="#" />
+            <div class="wrap-prize">
+              <h4>главный приз</h4>
+              <p>
+                умная система очистки<br />
+                воздуха
+              </p>
+            </div>
+            <button>заполнить адрес доставки</button>
+            <button>заполнить персональные данные</button>
+          </div>
+        </div>
+        <!-- карточка 4  свернутая-->
+        <div class="purchase-card-hidden small_hidden">
+          <div class="card-data-hidden">
+            <p class="card-purchase_date">21.04.2021</p>
+            <p class="card-product_quantity">34</p>
+            <p class="card-numb_applictations">1456</p>
+            <p class="card-draw_date">21.04.2021</p>
+            <p>
+              нет ни одной<br />
+              выигравшей заявки
+            </p>
+          </div>
+          <div class="card-details-hidden">
+            <img src="img/Layer-81 1.png" alt="#" />
+            <div class="wrap-prize">
+              <h4>главный приз</h4>
+              <p>
+                умная система очистки<br />
+                воздуха
+              </p>
+            </div>
+            <button>заполнить адрес доставки</button>
+            <button>заполнить персональные данные</button>
+          </div>
+        </div>
+        <!-- карточка 5 свернутая-->
+        <!-- КОНЕЦ карточка 5 свернутая-->
+
+        <!-- карточка 6  свернутая-->
+        <!-- КОНЕЦ карточка 6  свернутая-->
+      </div>
+
+      <!-- нижняя часть секции main  -->
+      <div class="main-footer">
+        <!-- кнопка показать еще -->
+        <button>показать еще</button>
+        <!-- страницы -->
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="footer-rules">
+          <p><a href="#">Правила акции</a></p>
+          <p><a href="#">Продукция</a></p>
+          <p><a href="#">Пользовательское соглашение</a></p>
+          <p><a href="#">Политика конфиденциальности</a></p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/profile.php?id=1646512897"
+            target="_blank"
+            ><img src="img/FB.svg" alt="#"
+          /></a>
+          <a href="https://ok.ru/profile/547481604342" target="_blank"
+            ><img src="img/OK.svg" alt="#"
+          /></a>
+          <a href="https://vk.com/id1190398" target="_blank"
+            ><img src="img/VK.svg" alt="#"
+          /></a>
+          <a
+            href="https://www.instagram.com/yurich_from_vanino/"
+            target="_blank"
+            ><img src="img/INST.svg" alt="#"
+          /></a>
+          <a href="https://wa.me/79141844723" target="_blank"
+            ><img src="img/WUP.svg" alt="#"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
